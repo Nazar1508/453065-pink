@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Назар Колцун](https://up.htmlacademy.ru/adaptive/14/user/453065).
-* Наставник: `Неизвестно`.
+* Наставник: [Михаил Поданев](https://up.htmlacademy.ru/adaptive/14/user/63947).
 
 ---
 
