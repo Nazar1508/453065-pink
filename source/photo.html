@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body class="photo">
+    <header class="page-header">
+      <a class="page-header__logo" href="index.html">
+        <img class="page-header__logo-image" src="#" width="40" height="40" alt="Пинк">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a>Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+      <h2 class="page-header__title">Фотографии пользователей</h2>
+    </header>
+    <main class="page-main">
+      <section class="users-photos">
+        <h2 class="visually-hidden">Фотографии</h2>
+        <p class="users-photos__promo">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        <figure class="users-photos__description demonstration">
+          <a class="demonstration__link" href="#">
+            <img class="demonstration__photo" src="#" width="40" height="40" alt="Фото">
+          </a>
+          <figcaption class="demonstration__description">
+            <b class="demonstration__user-name">Анна</b>
+            <time class="demonstration__time" datetime="2018-04-14">(5 минут назад)</time>
+            <p class="demonstration__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <span class="demonstration__likes">Нравится: 215</span>
+          </figcaption>
+        </figure>
+        <figure class="users-photos__description demonstration">
+          <a class="demonstration__link" href="#">
+            <img class="demonstration__photo" src="#" width="40" height="40" alt="Фото">
+          </a>
+          <figcaption class="demonstration__description">
+            <b class="demonstration__user-name">Левон</b>
+            <time class="demonstration__time" datetime="2018-04-14">(5 часов назад)</time>
+            <p class="demonstration__text">Вчера он на луну летал, сегодня в руки к нам попал</p>
+            <span class="demonstration__likes">Нравится: 356</span>
+          </figcaption>
+        </figure>
+        <figure class="users-photos__description demonstration">
+          <a class="demonstration__link" href="#">
+            <img class="demonstration__photo" src="#" width="40" height="40" alt="Фото">
+          </a>
+          <figcaption class="demonstration__description">
+            <b class="demonstration__user-name">Антон</b>
+            <time class="demonstration__time" datetime="2018-04-14">(12 часов назад)</time>
+            <p class="demonstration__text">Соседи будут рады!</p>
+            <span class="demonstration__likes">Нравится: 666</span>
+          </figcaption>
+        </figure>
+        <figure class="users-photos__description demonstration">
+          <a class="demonstration__link" href="#">
+            <img class="demonstration__photo" src="#" width="40" height="40" alt="Фото">
+          </a>
+          <figcaption class="demonstration__description">
+            <b class="demonstration__user-name">Борис</b>
+            <time class="demonstration__time" datetime="2018-04-14"> (20 часов назад)</time>
+            <p class="demonstration__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <span class="demonstration__likes">Нравится: 215</span>
+          </figcaption>
+        </figure>
+        <figure class="users-photos__description demonstration">
+          <a class="demonstration__link" href="#">
+            <img class="demonstration__photo" src="#" width="40" height="40" alt="Фото">
+          </a>
+          <figcaption class="demonstration__description">
+            <b class="demonstration__user-name">Сергей</b>
+            <time class="demonstration__time" datetime="2018-04-14"> (25 часов назад)</time>
+            <p class="demonstration__text">Самая кубанская в мире!</p>
+            <span class="demonstration__likes">Нравится: 4</span>
+          </figcaption>
+        </figure>
+        <figure class="users-photos__description demonstration">
+          <a class="demonstration__link" href="#">
+            <img class="demonstration__photo" src="#" width="40" height="40" alt="Фото">
+          </a>
+          <figcaption class="demonstration__description">
+            <b class="demonstration__user-name">Максим</b>
+            <time class="demonstration__time" datetime="2018-04-14"> (40 часов назад)</time>
+            <p class="demonstration__text">Где снег-то?</p>
+            <span class="demonstration__likes">Нравится: 150</span>
+          </figcaption>
+        </figure>
+        <figure class="users-photos__description demonstration">
+          <a class="demonstration__link" href="#">
+        	  <img class="demonstration__photo" src="#" width="40" height="40" alt="Фото">
+          </a>
+          <figcaption class="demonstration__description">
+            <b class="demonstration__user-name">Надежда</b>
+            <time class="demonstration__time" datetime="2018-04-14"> (45 часов назад)</time>
+            <p class="demonstration__text">Всем GM и взаимные лайки!</p>
+            <span class="demonstration__likes">Нравится: 2560</span>
+          </figcaption>
+        </figure>
+      </section>
+      <section class="your-photos">
+        <h2 class="visually-hidden">Ваши фото</h2>
+        <p class="your-photos__promo">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+        <figure class="your-photos__description add-photo">
+          <a class="add-photo__link" href="#">
+            <img class="add-photo__item" src="#" width="" height="" alt="Фото">
+          </a>
+          <figcaption class="add-photo__item-effects">
+            <form class="add-photo_form" action="https://echo.htmlacademy.ru" method="post">
+              <fieldset class="add-photo_field">
+                <p>
+                  <input class="add-photo_size" type="checkbox" name="size" id="size" checked>
+                  <label class="visually-hidden add-photo_size-icon" for="size">Размер фото</label>
+                </p>
+                <p>
+                  <input class="add-photo_fill" type="checkbox" name="fill" id="fill">
+                  <label class="visually-hidden add-photo_fill-icon" for="fill">Заливка</label>
+                </p>
+                <p>
+                  <input class="add-photo_contrast" type="checkbox" name="contrast" id="contrast">
+                  <label class="visually-hidden add-photo_contrast-icon" for="contrast">Контраст</label>
+                </p>
+              </fieldset>
+              <div class="range">
+                <!-- Тут буде діапазон інтенсивності накладених ефектів -->
+              </div>
+              <p class="add-photo__buttons">
+                <button class="add-photo__button-post" type="submit">Запостить</button>
+                <button class="add-photo__button-cancel" type="button">Отмена</button>
+              </p>
+            </form>
+          </figcaption>
+        </figure>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <a class="page-footer__logo">
+          <img class="page-foo__logo-image" src="#" width="40" height="40" alt="Пинк">
+        </a>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">Мы в Твиттер</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy/">Мы в Фейсбуке</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано:</b>
+          <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
