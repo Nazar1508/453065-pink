@@ -1,0 +1,60 @@
+.our-offer {
+  margin-top: 45px;
+}
+
+.our-offer__heading-top,
+.our-offer__heading-bottom {
+  width: 330px;
+  margin: 0 auto;
+  font-weight: 300;
+  font-size: @big-size;
+  text-align: center;
+}
+
+.our-offer__heading-top {
+  margin-bottom: 40px;
+}
+
+.our-offer__list {
+  .lists;
+  padding-top: 100px;
+  text-align: center;
+  background-color: @gray;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 100%;
+}
+
+.our-offer__item:not(:first-child) {
+  margin-top: 40px;
+}
+
+.our-offer__item--icon-3 {
+  position: relative;
+  padding-bottom: 325px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    display: block;
+    width: 157px;
+    height: 276px;
+    margin-left: -79px;
+    background-image: url("../img/iphone-screen-mobile@1x.png");
+  }
+}
+
+.our-offer__title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: @middle-size;
+}
+
+.our-offer__text {
+  width: 280px;
+  margin: 0 auto;
+}
