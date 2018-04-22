@@ -1,11 +1,12 @@
 .site-button {
   display: block;
-  max-width: 280px;
-  padding: 16px 35.5px;
+  width: 280px;
+  padding: 16px 15px;
   font-weight: bold;
   font-size: @middle-size;
   line-height: 18px;
   font-family: @font;
+  text-align: center;
   color: #ffffff;
   text-decoration: none;
   background-color: transparent;
@@ -22,5 +23,38 @@
   &:active {
     color: #f2ced5;
     background-color: #ffffff;
+  }
+}
+
+.site-button--post {
+  color: @red;
+  border-color: @red;
+
+  &:hover {
+    color: #ffffff;
+    background-color: @red;
+  }
+
+  &:active {
+    color: #e08195;
+    background-color: @red;
+  }
+}
+
+.site-button--cancel {
+  color: #e3e4e4;
+  background-color: transparent;
+  border-color: #dddfe0;
+
+  &:hover {
+    color: #c4c6c8;
+    background-color: transparent;
+    border-color: #b5b9be;
+  }
+
+  &:active {
+    color: #cdd0d3;
+    background-color: #b5b9be;
+    border-color: #b5b9be;
   }
 }

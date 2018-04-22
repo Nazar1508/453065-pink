@@ -1,0 +1,57 @@
+.demonstration__link--panorama {
+  position: relative;
+  display: block;
+
+  &::before {
+    content: "Панорама дня";
+    position: absolute;
+    top: 0;
+    right: 6.25%;
+    width: 140px;
+    height: 36px;
+    font-size: @small-size;
+    line-height: 35px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: @red;
+  }
+}
+
+.demonstration__photo--panorama {
+  width: 100%;
+  height: auto;
+}
+
+.demonstration__description {
+  width: 280px;
+  margin: 0 auto;
+  margin-top: -6px;
+  padding: 20px 18px;
+  box-sizing: border-box;
+  text-align: left;
+  background-color: @gray;
+}
+
+.demonstration__time {
+  font-weight: 300px;
+  font-size: @small-size;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.demonstration__text {
+  margin: 0;
+  margin-top: 7px;
+}
+
+.demonstration__likes {
+  display: block;
+  margin-top: 16px;
+  padding-left: 32px;
+  font-size: @small-size;
+  color: @red;
+  text-transform: uppercase;
+  background-image: url("../img/icon-heart.svg");
+  background-repeat: no-repeat;
+  background-position: 0;
+}
