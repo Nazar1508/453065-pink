@@ -1,0 +1,31 @@
+.range {
+  position: relative;
+  width: 242px;
+  margin: 0 auto;
+  margin-top: 16px;
+  padding-bottom: 34px;
+}
+
+.range__line {
+  display: block;
+  width: 242px;
+  height: 2px;
+  background-color: #283645;
+}
+
+.range__button {
+  position: absolute;
+  top: -6px;
+  left: 194px;
+  width: 10px;
+  height: 10px;
+  background-color: @gray;
+  border: 2px solid @red;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:hover,
+  &:active {
+    background-color: @red;
+  }
+}
