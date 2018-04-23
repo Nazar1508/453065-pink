@@ -2,6 +2,16 @@
   background-color: #1d2631;
 }
 
+@media (min-width: @tablet-width) {
+  .download-application {
+    position: absolute;
+    right: 54%;
+    bottom: 100px;
+    width: 300px;
+    background: transparent;
+  }
+}
+
 .download-application__wrapper {
   display: flex;
   flex-direction: column;
@@ -13,6 +23,7 @@
 .download-application__list {
   display: flex;
   .lists;
+  margin-top: 44px;
 }
 
 .download-application__item:not(:last-child) {
