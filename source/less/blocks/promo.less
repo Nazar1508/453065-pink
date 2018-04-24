@@ -25,15 +25,36 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .promo__background {
+    min-height: 853px;
+    background-image:
+      url("../img/desktop-iphone-6.png"),
+      url("../img/back-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: 95% 226px, 0 -2px;
+    background-size: 85%, cover;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .promo__wrapper {
     width: 620px;
     margin: 0 auto;
+    padding-top: 100px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo__wrapper {
+    width: 940px;
   }
 }
 
 .promo--mini {
   min-height: 170px;
+  padding-top: 40px;
+  box-sizing: border-box;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50% 20%;
@@ -43,7 +64,6 @@
 .promo__title {
   width: 170px;
   margin: 0 auto;
-  padding-top: 40px;
   font-weight: 300;
   font-size: @big-size;
   line-height: 30px;
@@ -57,13 +77,22 @@
 
 .promo__title--index {
   display: none;
-  width: 130px;
-  margin-left: 57px;
-  padding-top: 100px;
+  width: 191px;
+  margin-top: 8px;
+  margin-left: 43px;
+  font-weight: 300;
+  line-height: 45px;
+  font-size: 40px;
 }
 
 @media (min-width: @tablet-width) {
   .promo__title--index {
     display: block;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo__title--index {
+    margin-top: 115px;
   }
 }
