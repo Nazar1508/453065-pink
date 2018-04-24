@@ -105,14 +105,6 @@
               <h3 class="slider__user-name">Николай Петров</h3>
               <p class="slider__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </li>
-            <li class="slider__item">
-              <h3 class="slider__user-name"></h3>
-              <p class="slider__text"></p>
-            </li>
-            <li class="slider__item">
-              <h3 class="slider__user-name"></h3>
-              <p class="slider__text"></p>
-            </li>
           </ul>
           <p class="slider__toggles">
             <button class="slider__toggle slider__toggle--active" type="button">
@@ -125,26 +117,73 @@
               <span class="visually-hidden">Третья кнопка</span>
             </button>
           </p>
+          <p class="slider__arrows">
+            <button class="slider__arrow-left">
+              <span class="visually-hidden">Стрелка влево></span>
+            </button>
+            <button class="slider__arrow-right">
+              <span class="visually-hidden">Стрелка вправо</span>
+            </button>
+          </p>
         </div>
       </section>
       <section class="price">
         <h2 class="visually-hidden">Цена</h2>
-        <div class="price__wrapper slider">
-          <table class="price__table slider__list">
+        <div class="price__wrapper">
+          <table class="price__table">
             <tr>
-              <th class="price__title price__title--hit slider__item">
+              <th class="price__title price__title--hidden">
+                <span class="price__title-name"></span>
+                <span class="price__title-value"></span>
+              </th>
+              <th class="price__title">
+                <span class="price__title-name">База</span>
+                <span class="price__title-value">1.99 USD</span>
+              </th>
+              <th class="price__title price__title--hit">
                 <span class="price__title-name">Стандарт</span>
                 <span class="price__title-value">3.99 USD</span>
               </th>
+              <th class="price__title">
+                <span class="price__title-name">Анлим</span>
+                <span class="price__title-value">9.99 USD</span>
+              </th>
             </tr>
             <tr>
-              <td class="price__option price__option--yes slider__item">Розовый фильтр</td>
+              <td class="price__option price__option--hide">Розовый фильтр</td>
+              <td class="price__option price__option--yes">
+                <span class="price__option-hidden">Розовый фильтр</span>
+              </td>
+              <td class="price__option price__option--yes">
+                <span class="price__option-hidden">Розовый фильтр</span>
+              </td>
+              <td class="price__option price__option--yes">
+                <span class="price__option-hidden">Розовый фильтр</span>
+              </td>
             </tr>
             <tr>
-              <td class="price__option price__option--yes slider__item">Смайлики</td>
+              <td class="price__option price__option--hide">Смайлики</td>
+              <td class="price__option price__option--no">
+                <span class="price__option-hidden">Смайлики</span>
+              </td>
+              <td class="price__option price__option--yes">
+                <span class="price__option-hidden">Смайлики</span>
+              </td>
+              <td class="price__option price__option--yes">
+                <span class="price__option-hidden">Смайлики</span>
+              </td>
             </tr>
             <tr>
-              <td class="price__option price__option--no slider__item">Комментарии</td>
+              <td class="price__option price__option--hide">Комментарии</td>
+              <td class="price__option price__option--no">
+                <span class="price__option-hidden">Комментарии</span>
+              </td>
+              <td class="price__option price__option--no">
+                <span class="price__option-hidden">Комментарии</span>
+              </td>
+              <td class="price__option price__option--yes">
+                <span class="price__option-hidden">Комментарии</span>
+              </td>
             </tr>
           </table>
           <p class="price__toggles slider__toggles">
