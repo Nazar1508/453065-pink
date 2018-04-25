@@ -6,11 +6,41 @@
   padding-bottom: 34px;
 }
 
+@media (min-width: @tablet-width) {
+  .range {
+    display: none;
+    width: 202px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.range--hidden {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .range--hidden {
+    display: block;
+    margin-top: 11px;
+  }
+}
+
+.add-photo__field-icon {
+  margin: 0;
+}
+
 .range__line {
   display: block;
   width: 242px;
   height: 2px;
   background-color: #283645;
+}
+
+@media (min-width: @tablet-width) {
+  .range__line {
+    width: 202px;
+  }
 }
 
 .range__button {
@@ -27,5 +57,25 @@
   &:hover,
   &:active {
     background-color: @red;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .range__button--1 {
+    left: 160px;
+  }
+}
+
+
+@media (min-width: @tablet-width) {
+  .range__button--2 {
+    left: 25px;
+  }
+}
+
+
+@media (min-width: @tablet-width) {
+  .range__button--3 {
+    left: 96px;
   }
 }
