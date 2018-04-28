@@ -3,125 +3,145 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Пинк">
-      </a>
-      <nav class="main-nav">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="photo.html">Фотографии</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link">Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="page-header__wrapper">
+        <a class="page-header__logo" href="index.html">
+          <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Пинк">
+        </a>
+        <nav class="main-nav">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="page-main">
       <div class="promo promo--mini">
-        <h2 class="promo__title promo__title--big">Конкурс на самое безбашенное путешествие с Пинк</h2>
+        <div class="promo__wrapper promo__wrapper--mini">
+            <h2 class="promo__title promo__title--big">Конкурс на самое безбашенное путешествие с Пинк</h2>
+        </div>
       </div>
       <section class="history">
-        <h2 class="visually-hidden">Ваша история</h2>
-        <p class="history__promo">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
-        <form class="history__form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="history__form-field">
-            <div class="history__field-wrapper">
-              <p class="history__field-item">
-                <label class="history__form-label history__form-label--red" for="surname">Фамилия:</label>
-                <input class="history__form-input" type="text" name="surname" id="surname" placeholder="Укажите фамилию *" required>
-              </p>
-              <p class="history__field-item">
-                <label class="history__form-label history__form-label--red" for="name">Имя:</label>
-                <input class="history__form-input" type="text" name="name" id="name" placeholder="Введите ваше имя *" required>
-              </p>
-              <p class="history__field-item">
-                <label class="history__form-label history__form-label--red" for="patronymic">Отчество:</label>
-                <input class="history__form-input" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
-              </p>
+        <div class="history__wrapper">
+          <h2 class="visually-hidden">Ваша история</h2>
+          <p class="history__promo">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="history__promo history__promo--hidden">Пожалуйста, заполните форму ниже:</span> </p>
+          <form class="history__form" action="https://echo.htmlacademy.ru" method="post">
+            <ul class="history__form-list">
+              <li class="history__form-item history__form-item--user-info">
+                <fieldset class="history__form-field">
+                  <div class="history__field-wrapper">
+                    <p class="history__field-item history__field-item--user-info">
+                      <label class="history__form-label history__form-label--red" for="surname">Фамилия:</label>
+                      <input class="history__form-input history__form-input--retreat" type="text" name="surname" id="surname" placeholder="Укажите фамилию *" required>
+                    </p>
+                    <p class="history__field-item history__field-item--user-info">
+                      <label class="history__form-label history__form-label--red" for="name">Имя:</label>
+                      <input class="history__form-input history__form-input--retreat" type="text" name="name" id="name" placeholder="Введите ваше имя *" required>
+                    </p>
+                    <p class="history__field-item history__field-item--user-info">
+                      <label class="history__form-label history__form-label--red" for="patronymic">Отчество:</label>
+                      <input class="history__form-input history__form-input--retreat" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
+                    </p>
+                  </div>
+                </fieldset>
+              </li>
+              <li class="history__form-item history__form-item--gray history__form-item--progress">
+                <fieldset class="history__form-field history__form-field--progress">
+                    <legend class="history__form-title">Ваши безбашенные достижения в путешествии</legend>
+                  <div class="history__field-wrapper">
+                    <p class="history__field-unit">
+                      <input class="history__form-checkbox visually-hidden" type="checkbox" name="progress-1" id="progress-1" checked>
+                      <label class="history__form-picker" for="progress-1">Сделал селфи с акулой</label>
+                    </p>
+                    <p class="history__field-unit">
+                      <input class="history__form-checkbox visually-hidden" type="checkbox" name="progress-2" id="progress-2" checked>
+                      <label class="history__form-picker" for="progress-2">Обгорел на пляже</label>
+                    </p>
+                    <p class="history__field-unit">
+                      <input class="history__form-checkbox visually-hidden" type="checkbox" name="progress-3" id="progress-3">
+                      <label class="history__form-picker" for="progress-3">Видел Чака Норриса</label>
+                    </p>
+                    <p class="history__field-unit">
+                      <input class="history__form-checkbox visually-hidden" type="checkbox" name="progress-4" id="progress-4">
+                      <label class="history__form-picker" for="progress-4">Накупил сувениров</label>
+                    </p>
+                    <p class="history__field-unit">
+                      <input class="history__form-checkbox visually-hidden" type="checkbox" name="progress-5" id="progress-5" checked>
+                      <label class="history__form-picker" for="progress-5">Удержал башню</label>
+                    </p>
+                    <p class="history__field-unit">
+                      <input class="history__form-checkbox visually-hidden" type="checkbox" name="progress-6" id="progress-6">
+                      <label class="history__form-picker" for="progress-6">Разгромил отель</label>
+                    </p>
+                  </div>
+                </fieldset>
+              </li>
+              <li class="history__form-item history__form-item--contacts">
+                <fieldset class="history__form-field history__form-field--contacts">
+                  <legend class="history__form-title">Контактная информация</legend>
+                  <div class="history__field-wrapper history__field-wrapper--contacts">
+                    <p class="history__field-item history__field-item--contacts">
+                        <label class="history__form-label history__form-label--red" for="tel">Номер телефона</label>
+                        <input class="history__form-input history__form-input--contacts" type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста">
+                      </p>
+                      <p class="history__field-item history__field-item--contacts">
+                        <label class="history__form-label history__form-label--red" for="email">Адрес почты</label>
+                        <input class="history__form-input history__form-input--contacts" type="email" name="email" id="email" placeholder="Введите почту *" required>
+                      </p>
+                  </div>
+                </fieldset>
+              </li>
+              <li class="history__form-item history__form-item--gray history__form-item--apps">
+                <fieldset class="history__form-field history__form-field--apps">
+                  <legend class="history__form-title">С каким приложением путешествовали?</legend>
+                  <div class="history__field-wrapper">
+                    <p class="history__field-item">
+                      <input class="history__form-aplication visually-hidden" type="radio" name="application" id="pink-ios" checked>
+                      <label class="history__form-pink" for="pink-ios">Pink для iOS</label>
+                    </p>
+                    <p class="history__field-item">
+                      <input class="history__form-aplication visually-hidden" type="radio" name="application" id="pink-android">
+                      <label class="history__form-pink" for="pink-android">Pink для Android</label>
+                    </p>
+                    <p class="history__field-item">
+                      <input class="history__form-aplication visually-hidden" type="radio" name="application" id="windows-phone">
+                      <label class="history__form-pink" for="windows-phone">Windows Phone</label>
+                    </p>
+                  </div>
+                </fieldset>
+              </li>
+              <li class="history__form-item history__form-item--emotions">
+                <fieldset class="history__form-field history__form-field--emotions">
+                  <legend class="history__form-title">Опишите свои эмоции</legend>
+                  <div class="history__field-wrapper">
+                    <p class="history__field-item">
+                      <textarea class="history__form-textarea" name="description" rows="3" cols="50" id="description" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+                    </p>
+                  </div>
+                </fieldset>
+              </li>
+            </ul>
+            <div class="history__form-button">
+              <button class="history__form-submit" type="submit">Отправить форму</button>
+              <p class="history__form-required"><span>*</span>— обязательные поля</p>
             </div>
-          </fieldset>
-          <fieldset class="history__form-field history__form-field--gray">
-            <div class="history__field-wrapper">
-              <p class="history__form-title">Ваши безбашенные достижения в путешествии</p>
-              <p class="history__field-unit">
-                <input class="history__form-checkbox visually-hidden" type="checkbox" name="progress-1" id="progress-1" checked>
-                <label class="history__form-picker" for="progress-1">Сделал селфи с акулой</label>
-              </p>
-              <p class="history__field-unit">
-                <input class="history__form-checkbox visually-hidden" type="checkbox" name="progress-2" id="progress-2" checked>
-                <label class="history__form-picker" for="progress-2">Обгорел на пляже</label>
-              </p>
-              <p class="history__field-unit">
-                <input class="history__form-checkbox visually-hidden" type="checkbox" name="progress-3" id="progress-3">
-                <label class="history__form-picker" for="progress-3">Видел Чака Норриса</label>
-              </p>
-              <p class="history__field-unit">
-                <input class="history__form-checkbox visually-hidden" type="checkbox" name="progress-4" id="progress-4">
-                <label class="history__form-picker" for="progress-4">Накупил сувениров</label>
-              </p>
-              <p class="history__field-unit">
-                <input class="history__form-checkbox visually-hidden" type="checkbox" name="progress-5" id="progress-5" checked>
-                <label class="history__form-picker" for="progress-5">Удержал башню</label>
-              </p>
-              <p class="history__field-unit">
-                <input class="history__form-checkbox visually-hidden" type="checkbox" name="progress-6" id="progress-6">
-                <label class="history__form-picker" for="progress-6">Разгромил отель</label>
-              </p>
-            </div>
-          </fieldset>
-          <fieldset class="history__form-field">
-            <div class="history__field-wrapper">
-              <p class="history__field-item">
-                  <label class="history__form-label history__form-label--red" for="tel">Номер телефона</label>
-                  <input class="history__form-input" type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста">
-                </p>
-                <p class="history__field-item">
-                  <label class="history__form-label history__form-label--red" for="email">Адрес почты</label>
-                  <input class="history__form-input" type="email" name="email" id="email" placeholder="Введите почту *" required>
-                </p>
-            </div>
-          </fieldset>
-          <fieldset class="history__form-field history__form-field--gray">
-            <div class="history__field-wrapper">
-              <p class="history__form-title">С каким приложением путешествовали?</p>
-              <p class="history__field-item">
-                <input class="history__form-aplication visually-hidden" type="radio" name="application" id="pink-ios" checked>
-                <label class="history__form-pink" for="pink-ios">Pink для iOS</label>
-              </p>
-              <p class="history__field-item">
-                <input class="history__form-aplication visually-hidden" type="radio" name="application" id="pink-android">
-                <label class="history__form-pink" for="pink-android">Pink для Android</label>
-              </p>
-              <p class="history__field-item">
-                <input class="history__form-aplication visually-hidden" type="radio" name="application" id="windows-phone">
-                <label class="history__form-pink" for="windows-phone">Windows Phone</label>
-              </p>
-            </div>
-          </fieldset>
-          <fieldset class="history__form-field">
-            <div class="history__field-wrapper">
-              <p class="history__field-item">
-                <label class="history__description-label" for="description">Опишите свои эмоции</label>
-                <textarea class="history__form-textarea" name="description" rows="3" cols="50" id="description" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-              </p>
-            </div>
-          </fieldset>
-          <div class="history__form-button">
-            <button class="history__form-submit" type="submit">Отправить форму</button>
-            <p class="history__form-required"><span>*</span>— обязательные поля</p>
-          </div>
-        </form>
+          </form>
+        </div>
       </section>
     </main>
     <footer class="page-footer">

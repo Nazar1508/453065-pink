@@ -2,7 +2,55 @@
   background-color: #283645;
 }
 
+@media (min-width: @tablet-width) {
+  .page-header {
+    padding-top: 27px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    position: absolute;
+    width: 100%;
+    min-height: 110px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 2;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__wrapper {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+  }
+}
+
 .page-header__logo-image {
   margin-top: 22px;
   margin-left: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__logo {
+    display: block;
+    width: 148px;
+    height: 42px;
+    margin-left: 20px;
+    background-image: url("../img/logotype-white-tablet.png");
+    background-repeat: no-repeat;
+  }
+
+  .page-header__logo-image {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__logo {
+    position: absolute;
+    background-image: url("../img/logotype-white-desktop.png");
+    background-repeat: no-repeat;
+  }
 }
