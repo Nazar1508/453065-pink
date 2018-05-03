@@ -2,21 +2,6 @@
   background-color: #1d2631;
 }
 
-@media (min-width: @tablet-width) {
-  .download-application {
-    position: relative;
-    width: 620px;
-    margin: 0 auto;
-    background: transparent;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .download-application {
-    width: 940px;
-  }
-}
-
 .download-application__wrapper {
   display: flex;
   flex-direction: column;
@@ -25,27 +10,24 @@
   align-items: center;
 }
 
-@media (min-width: @tablet-width) {
-  .download-application__wrapper {
-    position: absolute;
-    top: -350px;
-  }
+.download-application__title {
+  display: none;
 }
 
 .download-application__list {
   display: flex;
   .lists;
-  margin-top: 44px;
+  margin-top: 29px;
 }
 
 .download-application__item:not(:last-child) {
-  margin-right: 35px;
+  margin-right: 33px;
 }
 
 .download-application__link {
   display: block;
   width: 47px;
-  height: 56px;
+  height: 60px;
 }
 
 .download-application__link--apple {
@@ -57,20 +39,82 @@
 .download-application__link--android {
   background-image: url("../img/logo-android.svg");
   background-repeat: no-repeat;
-  background-position: 50%;
+  background-position: 50% 80%;
 }
 
 .download-application__link--windows {
   background-image: url("../img/logo-microsoft.svg");
   background-repeat: no-repeat;
-  background-position: 50%;
+  background-position: 50% 80%;
 }
 
 .download-application__text {
   width: 235px;
   margin: 0;
-  margin-top: 25px;
+  margin-top: 19px;
   font-weight: 300;
   text-align: center;
   color: #d3d4d5;
+}
+
+@media (min-width: @tablet-width) {
+  .download-application {
+    position: relative;
+    width: 620px;
+    margin: 0 auto;
+    background: transparent;
+  }
+
+  .download-application__wrapper {
+    position: absolute;
+    width: 300px;
+    top: -555px;
+  }
+
+  .download-application__title {
+    display: block;
+    margin: 0;
+    margin-bottom: 31px;
+    width: 215px;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .download-application__list {
+    margin-top: 42px;
+  }
+
+  .download-application__text {
+    width: 300px;
+    margin-top: 36px;
+    font-size: @middle-size;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .download-application {
+    width: 940px;
+  }
+
+  .download-application__wrapper {
+    top: -661px;
+  }
+
+  .download-application__title {
+    width: 300px;
+    margin-bottom: 54px;
+    font-size: 50px;
+    line-height: 59px;
+  }
+
+  .download-application__list {
+    margin-top: 65px;
+  }
+
+  .download-application__text {
+    margin-top: 55px;
+  }
 }

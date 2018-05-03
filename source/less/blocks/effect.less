@@ -2,10 +2,47 @@
   display: none;
 }
 
+.effect__text--wrap-2 {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .effect {
     display: block;
-    padding-top: 100px;
+  }
+
+  .effect__wrapper {
+    width: 620px;
+    min-height: 280px;
+    margin: 0 auto;
+    padding-top: 96px;
+    background-image: url("../img/timer-icon.png");
+    background-repeat: no-repeat;
+    background-size: 238px 276px;
+    background-position: 0 60px;
+  }
+
+  .effect__content {
+    width: 320px;
+    margin-left: 309px;
+  }
+
+  .effect__title {
+    margin: 0;
+    margin-bottom: 9px;
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .effect__text {
+    width: 300px;
+    margin: 0;
+  }
+
+  .effect__link {
+    display: block;
+    margin-top: 11px;
+    color: @red;
   }
 }
 
@@ -13,109 +50,47 @@
   .effect {
     background-color: @gray;
   }
-}
 
-@media (min-width: @tablet-width) {
-  .effect__wrapper {
-    width: 620px;
-    min-height: 280px;
-    margin: 0 auto;
-    padding-top: 100px;
-    background-image: url("../img/timer-icon.png");
-    background-repeat: no-repeat;
-    background-size: 238px 276px;
-    background-position: 0;
-  }
-}
-
-@media (min-width: @desktop-width) {
   .effect__wrapper {
     width: 940px;
+    padding-top: 92px;
+    padding-bottom: 39px;
     background-image: url("../img/timer-icon-desktop.png");
     background-repeat: no-repeat;
     background-size: 298px 345px;
-    background-position: 0;
+    background-position: 0 2px;
   }
-}
 
-@media (min-width: @tablet-width) {
-  .effect__content {
-    width: 320px;
-    margin-left: auto;
+  .effect__title {
+    margin-bottom: 24px;
   }
-}
 
-@media (min-width: @desktop-width) {
+  .effect__title br {
+    display: none;
+  }
+
   .effect__content {
     width: 540px;
+    margin-left: 366px;
   }
-}
 
-@media (min-width: @tablet-width) {
-  .effect__title {
-    margin: 0;
-    margin-bottom: 18px;
-    font-size: 30px;
-    line-height: 36px;
-  }
-}
-
-@media (min-width: @tablet-width) {
-  .effect__title-wrap {
-    margin-right: 160px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .effect__title-wrap {
-    margin: 0;
-  }
-}
-
-
-@media (min-width: @tablet-width) {
   .effect__text {
-    margin: 0;
-    margin-bottom: 18px;
-    padding-right: 18px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .effect__text {
-    font-size: @middle-size;
+    width: 535px;
     padding: 0;
+    font-size: @middle-size;
+    line-height: 29px;
   }
-}
 
-@media (min-width: @tablet-width) {
-  .effect__text .wrap-2,
-  .effect__text .wrap-3 {
-    margin-right: 15px;
+  .effect__text--wrap-1 {
+    display: none;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .effect__text .wrap-2,
-  .effect__text .wrap-3 {
-    margin: 0;
+  .effect__text--wrap-2 {
+    display: block;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .effect__text .wrap-1 {
-    margin-right: 25px;
-  }
-}
-
-@media (min-width: @tablet-width) {
   .effect__link {
-    color: @red;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .effect__link {
+    margin-top: 34px;
     font-size: @middle-size;
   }
 }

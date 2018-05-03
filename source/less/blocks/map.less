@@ -1,6 +1,6 @@
 .map {
   width: 100%;
-  min-height: 200px;
+  min-height: 197px;
   background-image:
     url("../img/bg-triangle-white-footer.svg"),
     url("../img/bg-map-mobile@1x.png");
@@ -11,22 +11,23 @@
 
 @media (min-width: @tablet-width) {
   .map {
-    min-height: 374px;
+    min-height: 384px;
     background-image:
       url("../img/bg-triangle-white-footer.svg"),
       url("../img/bg-map-tablet@1x.png");
     background-size: 100%, cover;
-    background-position: 50% 0, 50% 67%;
+    background-position: 50% 0, 50% 71%;
   }
 }
 
 @media (min-width: @desktop-width) {
   .map {
+    position: relative;
     min-height: 500px;
     background-image:
       url("../img/bg-triangle-white-footer.svg"),
       url("../img/bg-map-desktop@1x.png");
+    background-position: 50% 0, 50% 58%;
     background-size: 100%, cover;
-    background-position: 50% 0, 50% 50%;
   }
 }

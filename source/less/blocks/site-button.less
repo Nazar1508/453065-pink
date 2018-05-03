@@ -41,12 +41,6 @@
   }
 }
 
-@media (min-width: @tablet-width) {
-  .site-button--post {
-    width: 180px;
-  }
-}
-
 .site-button--cancel {
   color: #e3e4e4;
   background-color: transparent;
@@ -66,7 +60,29 @@
 }
 
 @media (min-width: @tablet-width) {
+  .site-button--tablet {
+    width: 300px;
+  }
+
   .site-button--cancel {
+    width: 262px;
+  }
+
+  .site-button--post {
+    width: 262px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-button--desktop {
+    font-size: 21px;
+  }
+
+  .site-button--cancel {
+    width: 180px;
+  }
+
+  .site-button--post {
     width: 180px;
   }
 }

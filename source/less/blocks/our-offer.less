@@ -1,64 +1,26 @@
 .our-offer {
-  margin-top: 45px;
-}
-
-@media (min-width: @tablet-width) {
-  .our-offer__wrapper {
-    width: 620px;
-    margin: 0 auto;
-  }
+  margin-top: 42px;
 }
 
 .our-offer__heading-top,
 .our-offer__heading-bottom {
-  width: 330px;
+  width: 250px;
   margin: 0 auto;
   font-weight: 300;
   font-size: @big-size;
+  line-height: 28px;
   text-align: center;
 }
 
-@media (min-width: @tablet-width) {
-  .our-offer__heading-top,
-  .our-offer__heading-bottom {
-    font-size: 40px;
-    line-height: 45px;
-  }
-}
-
 .our-offer__heading-top {
-  margin-bottom: 40px;
-}
-
-@media (min-width: @tablet-width) {
-  .our-offer__heading-top {
-    width: 100%;
-  }
+  margin-bottom: 31px;
 }
 
 .our-offer__list {
   .lists;
-  padding-top: 100px;
+  margin-top: 35px;
+  padding-top: 80px;
   text-align: center;
-}
-
-@media (min-width: @tablet-width) {
-  .our-offer__list {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    padding-bottom: 40px;
-    text-align: left;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .our-offer__list {
-    flex-direction: row;
-    justify-content: space-around;
-    padding-top: 366px;
-    text-align: center;
-  }
 }
 
 .our-offer__list-background {
@@ -69,27 +31,17 @@
   background-size: 100%;
 }
 
-@media (min-width: @tablet-width) {
-  .our-offer__list-wrapper {
-    width: 620px;
-    margin: 0 auto;
-  }
+.our-offer__item {
+  margin-top: 33px;
 }
 
-@media (min-width: @desktop-width) {
-  .our-offer__list-wrapper {
-    width: 940px;
-    min-height: 623px;
-  }
-}
-
-.our-offer__item:not(:first-child) {
-  margin-top: 40px;
+.our-offer__item:first-child {
+  margin-top: 0;
 }
 
 .our-offer__item--icon-3 {
   position: relative;
-  padding-bottom: 325px;
+  padding-bottom: 318px;
 
   &::after {
     content: "";
@@ -98,94 +50,16 @@
     bottom: 0;
     width: 157px;
     height: 276px;
-    margin-left: -79px;
+    margin-left: -78px;
     background-image: url("../img/iphone-screen-mobile@1x.png");
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .our-offer__item--icon-1 {
-    position: relative;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .our-offer__item--icon-1::after {
-    content: "";
-    position: absolute;
-    left: 95px;
-    top: -360px;
-    width: 294px;
-    height: 302px;
-    margin-left: -72px;
-    background-image: url("../img/iphone-screen-tablet1@1x.png");
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .our-offer__item--icon-2 {
-    position: relative;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .our-offer__item--icon-2::after {
-    content: "";
-    position: absolute;
-    left: 95px;
-    top: -360px;
-    width: 294px;
-    height: 302px;
-    margin-left: -100px;
-    background-image: url("../img/iphone-screen-tablet2@1x.png");
-  }
-}
-
-@media (min-width: @tablet-width) {
-  .our-offer__item--icon-3 {
-    position: relative;
-    padding: 0;
-  }
-}
-
-@media (min-width: @tablet-width) {
-  .our-offer__item--icon-3::after {
-    content: "";
-    position: absolute;
-    left: -235px;
-    bottom: -39px;
-    width: 270px;
-    height: 481px;
-    margin-left: -79px;
-    background-image: url("../img/iphone-screen-tablet@1x.png");
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .our-offer__item--icon-3::after {
-    position: absolute;
-    left: 95px;
-    top: -360px;
-    width: 294px;
-    height: 302px;
-    margin-left: -79px;
-    background-image: url("../img/iphone-screen-tablet3@1x.png");
   }
 }
 
 .our-offer__title {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-weight: bold;
   font-size: @middle-size;
-}
-
-@media (min-width: @desktop-width) {
-  .our-offer__title {
-    padding: 0 43px;
-    font-size: 30px;
-    line-height: 30px;
-  }
 }
 
 .our-offer__text {
@@ -193,9 +67,169 @@
   margin: 0 auto;
 }
 
+.our-offer__text br {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .our-offer {
+    margin-top: 51px;
+  }
+
+  .our-offer__wrapper {
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  .our-offer__heading-top,
+  .our-offer__heading-bottom {
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+  .our-offer__heading-top {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .our-offer__heading-bottom {
+    width: 340px;
+  }
+
+  .our-offer__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 44px;
+    padding-bottom: 45px;
+    text-align: left;
+  }
+
+  .our-offer__item {
+    margin-top: 36px;
+  }
+
+  .our-offer__text {
+    width: 310px;
+  }
+
+  .our-offer__text br {
+    display: block;
+  }
+
+  .our-offer__item--icon-3 {
+    position: relative;
+    padding: 0;
+  }
+
+  .our-offer__item--icon-3::after {
+    content: "";
+    position: absolute;
+    left: -235px;
+    bottom: -45px;
+    width: 270px;
+    height: 481px;
+    margin-left: -74px;
+    background-image: url("../img/iphone-screen-tablet@1x.png");
+  }
+
+  .our-offer__list-wrapper {
+    width: 620px;
+    margin: 0 auto;
+  }
+}
+
 @media (min-width: @desktop-width) {
+  .our-offer {
+    margin-top: 68px;
+  }
+
+  .our-offer__heading-wrapper {
+    padding-bottom: 39px;
+  }
+
+  .our-offer__heading-top,
+  .our-offer__heading-bottom {
+    font-size: 50px;
+    line-height: 57px;
+  }
+
+  .our-offer__heading-bottom {
+    width: 425px;
+  }
+
+  .our-offer__list {
+    flex-direction: row;
+    margin-left: 31px;
+    padding-top: 295px;
+    text-align: center;
+  }
+
+  .our-offer__list-wrapper {
+    width: 940px;
+    min-height: 623px;
+  }
+
+  .our-offer__item {
+    width: 238px;
+    margin-right: 81px;
+  }
+
+  .our-offer__item--icon-1 {
+    position: relative;
+  }
+
+  .our-offer__item--icon-1::after {
+    content: "";
+    position: absolute;
+    left: 95px;
+    top: -335px;
+    width: 294px;
+    height: 302px;
+    margin-left: -123px;
+    background-image: url("../img/iphone-screen-tablet1@1x.png");
+  }
+
+  .our-offer__item--icon-2 {
+    position: relative;
+  }
+
+  .our-offer__item--icon-2::after {
+    content: "";
+    position: absolute;
+    left: 95px;
+    top: -335px;
+    width: 294px;
+    height: 302px;
+    margin-left: -122px;
+    background-image: url("../img/iphone-screen-tablet2@1x.png");
+  }
+
+  .our-offer__item--icon-3::after {
+    position: absolute;
+    left: 95px;
+    top: -335px;
+    width: 294px;
+    height: 302px;
+    margin-left: -121px;
+    background-image: url("../img/iphone-screen-tablet3@1x.png");
+  }
+
+  .our-offer__title {
+    margin-top: 23px;
+    margin-bottom: 28px;
+    padding: 0 5px;
+    font-size: 30px;
+    line-height: 30px;
+  }
+
   .our-offer__text {
     width: 240px;
     font-size: @middle-size;
+    line-height: 29px;
+  }
+
+  .our-offer__text br {
+    display: none;
   }
 }
