@@ -1,5 +1,5 @@
 .your-photos {
-  margin-top: 45px;
+  margin-top: 40px;
   text-align: center;
 }
 
@@ -11,7 +11,36 @@
 
 .your-photos__description {
   margin: 0;
+  margin-top: 43px;
   padding-top: 20px;
   padding-bottom: 41px;
   background-color: @gray;
+}
+
+@media (min-width: @tablet-width) {
+  .your-photos {
+    margin-top: 45px;
+  }
+
+  .your-photos__promo {
+    width: 425px;
+    margin: 0 auto;
+    font-size: @middle-size;
+    line-height: 30px;
+  }
+
+  .your-photos__description {
+    margin-top: 66px;
+    padding-bottom: 53px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .your-photos {
+    margin-top: 6px;
+  }
+
+  .your-photos__description {
+    margin-bottom: 26px;
+  }
 }
