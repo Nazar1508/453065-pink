@@ -5,6 +5,7 @@
     <title>HTML Academy: Пинк</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
+    <script src="js/picturefill.js"></script>
   </head>
   <body>
     <header class="page-header">
@@ -44,9 +45,11 @@
         </div>
         <figure class="users-photos__description demonstration">
           <a class="demonstration__link demonstration__link--panorama" href="#">
-            <img class="demonstration__photo demonstration__photo--mobile" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама дня">
-            <img class="demonstration__photo demonstration__photo--tablet" src="img/panorama-tablet.jpg" width="660" height="509" alt="Панорама дня">
-            <img class="demonstration__photo demonstration__photo--desktop" src="img/panorama-desktop.jpg" width="1200" height="506" alt="Панорама дня">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+              <img class="demonstration__photo demonstration__photo--panorama" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Панорама дня">
+            </picture>
           </a>
           <figcaption class="demonstration__description demonstration__description--panorama">
             <div class="demonstration__user-info">
@@ -61,9 +64,11 @@
           <ul class="users-photos__list">
             <li class="users-photos__item demonstration">
               <a class="demonstration__link" href="#">
-                <img class="demonstration__photo demonstration__photo--mobile" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фото">
-                <img class="demonstration__photo demonstration__photo--tablet" src="img/photo-1-tablet.jpg" width="300" height="300" alt="Фото">
-                <img class="demonstration__photo demonstration__photo--desktop" src="img/photo-1-desktop.jpg" width="300" height="400" alt="Фото">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+                  <img class="demonstration__photo" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Панорама дня">
+                </picture>
               </a>
               <div class="demonstration__description demonstration__description--users">
                 <div class="demonstration__user-info">
@@ -76,9 +81,11 @@
             </li>
             <li class="users-photos__item demonstration">
               <a class="demonstration__link" href="#">
-                <img class="demonstration__photo demonstration__photo--mobile" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фото">
-                <img class="demonstration__photo demonstration__photo--tablet" src="img/photo-2-tablet.jpg" width="300" height="300" alt="Фото">
-                <img class="demonstration__photo demonstration__photo--desktop" src="img/photo-2-desktop.jpg" width="300" height="400" alt="Фото">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+                  <img class="demonstration__photo" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Панорама дня">
+                </picture>
               </a>
               <div class="demonstration__description demonstration__description--users">
                 <div class="demonstration__user-info">
@@ -91,9 +98,11 @@
             </li>
             <li class="users-photos__item demonstration">
               <a class="demonstration__link" href="#">
-                <img class="demonstration__photo demonstration__photo--mobile" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фото">
-                <img class="demonstration__photo demonstration__photo--tablet" src="img/photo-3-tablet.jpg" width="300" height="300" alt="Фото">
-                <img class="demonstration__photo demonstration__photo--desktop" src="img/photo-3-desktop.jpg" width="300" height="400" alt="Фото">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+                  <img class="demonstration__photo" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Панорама дня">
+                </picture>
               </a>
               <div class="demonstration__description demonstration__description--users">
                 <div class="demonstration__user-info">
@@ -106,9 +115,11 @@
             </li>
             <li class="users-photos__item demonstration">
               <a class="demonstration__link" href="#">
-                <img class="demonstration__photo demonstration__photo--mobile" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фото">
-                <img class="demonstration__photo demonstration__photo--tablet" src="img/photo-4-tablet.jpg" width="300" height="300" alt="Фото">
-                <img class="demonstration__photo demonstration__photo--desktop" src="img/photo-4-desktop.jpg" width="300" height="400" alt="Фото">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+                  <img class="demonstration__photo" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Панорама дня">
+                </picture>
               </a>
               <div class="demonstration__description demonstration__description--users">
                 <div class="demonstration__user-info">
@@ -121,9 +132,11 @@
             </li>
             <li class="users-photos__item demonstration">
               <a class="demonstration__link" href="#">
-                <img class="demonstration__photo demonstration__photo--mobile" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фото">
-                <img class="demonstration__photo demonstration__photo--tablet" src="img/photo-5-tablet.jpg" width="300" height="300" alt="Фото">
-                <img class="demonstration__photo demonstration__photo--desktop" src="img/photo-5-desktop.jpg" width="300" height="400" alt="Фото">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+                  <img class="demonstration__photo" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Панорама дня">
+                </picture>
               </a>
               <div class="demonstration__description demonstration__description--users">
                 <div class="demonstration__user-info">
@@ -136,9 +149,11 @@
             </li>
             <li class="users-photos__item demonstration">
               <a class="demonstration__link" href="#">
-                <img class="demonstration__photo demonstration__photo--mobile" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фото">
-                <img class="demonstration__photo demonstration__photo--tablet" src="img/photo-6-tablet.jpg" width="300" height="300" alt="Фото">
-                <img class="demonstration__photo demonstration__photo--desktop" src="img/photo-6-desktop.jpg" width="300" height="400" alt="Фото">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+                  <img class="demonstration__photo" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Панорама дня">
+                </picture>
               </a>
               <div class="demonstration__description demonstration__description--users">
                 <div class="demonstration__user-info">
@@ -158,8 +173,11 @@
         <div class="your-photos__description add-photo">
           <div class="add-photo__wrapper">
             <a class="add-photo__link" href="#">
-              <img class="add-photo__item add-photo__item--mobile" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Фото">
-              <img class="add-photo__item add-photo__item--tablet" src="img/photo-7-tablet.jpg" width="300" height="400" alt="Фото">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+                <img src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Фото">
+              </picture>
             </a>
             <div class="add-photo__item-effects">
               <form class="add-photo_form" action="https://echo.htmlacademy.ru" method="post">
