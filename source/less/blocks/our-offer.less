@@ -52,6 +52,11 @@
     height: 276px;
     margin-left: -78px;
     background-image: url("../img/iphone-screen-mobile@1x.png");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/iphone-screen-mobile@2x.png");
+      background-size: 157px auto;
+    }
   }
 }
 
@@ -130,7 +135,13 @@
     width: 270px;
     height: 481px;
     margin-left: -74px;
-    background-image: url("../img/iphone-screen-tablet@1x.png");
+    background-image: url("../img/iphone-screen-3-tablet@1x.png");
+    background-repeat: no-repeat;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/iphone-screen-3-tablet@2x.png");
+      background-size: 269px auto;
+    }
   }
 
   .our-offer__list-wrapper {
@@ -187,7 +198,12 @@
     width: 294px;
     height: 302px;
     margin-left: -123px;
-    background-image: url("../img/iphone-screen-tablet1@1x.png");
+    background-image: url("../img/iphone-screen-1-desktop@1x.png");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/iphone-screen-1-desktop@2x.png");
+      background-size: 295px auto;
+    }
   }
 
   .our-offer__item--icon-2 {
@@ -202,7 +218,12 @@
     width: 294px;
     height: 302px;
     margin-left: -122px;
-    background-image: url("../img/iphone-screen-tablet2@1x.png");
+    background-image: url("../img/iphone-screen-2-desktop@1x.png");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/iphone-screen-2-desktop@2x.png");
+      background-size: 295px auto;
+    }
   }
 
   .our-offer__item--icon-3::after {
@@ -212,7 +233,12 @@
     width: 294px;
     height: 302px;
     margin-left: -121px;
-    background-image: url("../img/iphone-screen-tablet3@1x.png");
+    background-image: url("../img/iphone-screen-3-desktop@1x.png");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/iphone-screen-3-desktop@2x.png");
+      background-size: 295px auto;
+    }
   }
 
   .our-offer__title {
