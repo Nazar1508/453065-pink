@@ -8,16 +8,21 @@
   text-align: center;
 }
 
-.page-footer__logo:hover .letters {
+.page-footer__logo svg {
+  fill: #283646;
+}
+
+.page-footer__logo[href]:hover svg {
   fill: @red;
 }
 
-.page-footer__logo:active .letters {
-  fill: #283645;
+.page-footer__logo[href]:active svg {
+  fill: #283646;
+  opacity: 0.3;
 }
 
-.page-footer__logo:active svg {
-  opacity: 0.5;
+.page-footer__logo-image-desktop {
+  display: none;
 }
 
 .page-footer__social {
@@ -64,12 +69,14 @@
     width: 148px;
     height: 41px;
     margin-right: 231px;
-    background-image: url("../img/logotype-blue-desktop.png");
-    background-repeat: no-repeat;
   }
 
-  .page-footer__logo-image {
+  .page-footer__logo-image-mobile {
     display: none;
+  }
+
+  .page-footer__logo-image-desktop {
+    display: inline-block;
   }
 
   .page-footer__copyright {
