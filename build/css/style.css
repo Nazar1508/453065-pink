@@ -600,20 +600,11 @@ img {
   width: 47px;
   height: 60px;
 }
-.download-application__link--apple {
-  background-image: url("../img/logo-apple.svg");
-  background-repeat: no-repeat;
-  background-position: 50%;
+.download-application__image-android {
+  margin-top: 11px;
 }
-.download-application__link--android {
-  background-image: url("../img/logo-android.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 80%;
-}
-.download-application__link--windows {
-  background-image: url("../img/logo-microsoft.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 80%;
+.download-application__image-windows {
+  margin-top: 15px;
 }
 .download-application__text {
   width: 235px;
@@ -1163,20 +1154,22 @@ img {
   line-height: 30px;
 }
 .price__option {
+  position: relative;
   padding: 14.5px 23px;
   line-height: 30px;
   text-transform: uppercase;
   border: 2px solid #e5e5e5;
 }
-.price__option--yes {
-  background-image: url("../img/icon-yes.svg");
-  background-repeat: no-repeat;
-  background-position: 93% 46%;
+.price__option-image-yes {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  fill: #3dc644;
 }
-.price__option--no {
-  background-image: url("../img/icon-no.svg");
-  background-repeat: no-repeat;
-  background-position: 92% 46%;
+.price__option-image-no {
+  position: absolute;
+  right: 20px;
+  fill: #f25b26;
 }
 .price__option--hide {
   display: none;
@@ -1221,11 +1214,13 @@ img {
     padding: 6.5px 16px;
     text-transform: none;
   }
-  .price__option--yes {
-    background-position: 50% 50%;
+  .price__option-image-yes {
+    top: 8px;
+    right: 59px;
   }
-  .price__option--no {
-    background-position: 50% 50%;
+  .price__option-image-no {
+    top: 8px;
+    right: 61px;
   }
   .price__option--hide {
     display: block;
@@ -1264,6 +1259,14 @@ img {
   }
   .price__option {
     padding: 14.5px 21px;
+  }
+  .price__option-image-yes {
+    top: 21px;
+    right: 101px;
+  }
+  .price__option-image-no {
+    top: 16px;
+    right: 103px;
   }
   .price__option--hide {
     font-size: 18px;
@@ -1773,14 +1776,19 @@ img {
 }
 .demonstration__likes {
   display: block;
-  margin-top: 10px;
-  padding-left: 32px;
+  margin-top: auto;
+  margin-bottom: 0;
   font-size: 12px;
   color: #d22856;
   text-transform: uppercase;
-  background-image: url("../img/icon-heart.svg");
-  background-repeat: no-repeat;
-  background-position: 0;
+}
+.demonstration__likes-button {
+  width: 14px;
+  height: 12px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 .demonstration__likes--panorama {
   display: block;
@@ -1833,14 +1841,9 @@ img {
   }
   .demonstration__likes {
     margin-top: auto;
-    padding-left: 0;
-    background-position: 228px;
   }
   .demonstration__likes--panorama {
     margin: 0;
-    padding-left: 0;
-    padding-right: 30px;
-    background-position: 105px;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
@@ -1858,9 +1861,6 @@ img {
     width: 940px;
     min-height: 10px;
     padding-bottom: 24px;
-  }
-  .demonstration__likes--panorama {
-    background-position: 103px 6px;
   }
 }
 .your-photos {
@@ -2541,8 +2541,28 @@ img {
     margin-left: 0;
   }
   .history__form-label--contacts {
+    position: relative;
     margin-left: 20px;
     margin-top: 11px;
+  }
+  .history__form-label--contacts::after {
+    content: "";
+    position: absolute;
+    top: -71px;
+    left: 420px;
+    width: 58px;
+    height: 57.5px;
+    background-color: #e5e5e5;
+  }
+  .history__field-item--contacts:nth-child(1) .history__form-label--contacts::after {
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
+  .history__field-item--contacts:nth-child(2) .history__form-label--contacts::after {
+    background-image: url("../img/icon-mail.svg");
+    background-repeat: no-repeat;
+    background-position: 50%;
   }
   .history__form-input--retreat {
     -webkit-box-flex: 1;
@@ -2554,6 +2574,7 @@ img {
   .history__form-input--contacts {
     width: 100%;
     padding: 14.5px 19px;
+    padding-right: 60px;
   }
   .history__form-textarea {
     width: 500px;
@@ -2717,6 +2738,9 @@ img {
   }
   .history__form-input--contacts {
     width: 375px;
+  }
+  .history__form-label--contacts::after {
+    left: 295px;
   }
   .history__form-textarea {
     width: 820px;

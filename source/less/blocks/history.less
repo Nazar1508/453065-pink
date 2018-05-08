@@ -386,9 +386,33 @@
   }
 
   .history__form-label--contacts {
+    position: relative;
     margin-left: 20px;
     margin-top: 11px;
   }
+
+  .history__form-label--contacts::after {
+    content: "";
+    position: absolute;
+    top: -71px;
+    left: 420px;
+    width: 58px;
+    height: 57.5px;
+    background-color: #e5e5e5;
+  }
+
+  .history__field-item--contacts:nth-child(1) .history__form-label--contacts::after {
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
+
+  .history__field-item--contacts:nth-child(2) .history__form-label--contacts::after {
+    background-image: url("../img/icon-mail.svg");
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
+
 
   .history__form-input--retreat {
     flex-grow: 1;
@@ -399,6 +423,7 @@
   .history__form-input--contacts {
     width: 100%;
     padding: 14.5px 19px;
+    padding-right: 60px;
   }
 
   .history__form-textarea {
@@ -565,6 +590,10 @@
 
   .history__form-input--contacts {
     width: 375px;
+  }
+
+  .history__form-label--contacts::after {
+    left: 295px;
   }
 
   .history__form-textarea {

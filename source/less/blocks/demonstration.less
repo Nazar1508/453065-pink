@@ -66,14 +66,20 @@
 
 .demonstration__likes {
   display: block;
-  margin-top: 10px;
-  padding-left: 32px;
+  margin-top: auto;
+  margin-bottom: 0;
   font-size: @small-size;
   color: @red;
   text-transform: uppercase;
-  background-image: url("../img/icon-heart.svg");
-  background-repeat: no-repeat;
-  background-position: 0;
+}
+
+.demonstration__likes-button {
+  width: 14px;
+  height: 12px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 .demonstration__likes--panorama {
@@ -122,15 +128,10 @@
 
   .demonstration__likes {
     margin-top: auto;
-    padding-left: 0;
-    background-position: 228px;
   }
 
   .demonstration__likes--panorama {
     margin: 0;
-    padding-left: 0;
-    padding-right: 30px;
-    background-position: 105px;
     order: 2;
   }
 }
@@ -149,9 +150,5 @@
     width: 940px;
     min-height: 10px;
     padding-bottom: 24px;
-  }
-
-  .demonstration__likes--panorama {
-    background-position: 103px 6px;
   }
 }
