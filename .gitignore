@@ -4,7 +4,7 @@
 *.log
 *.pdf
 *.psd
-*.sublime*
+*.vscode*
 node_modules/
 npm-debug.*
 source/css/*.css
