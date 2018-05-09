@@ -65,15 +65,23 @@
 }
 
 .demonstration__likes {
+  position: relative;
   display: block;
-  margin-top: auto;
+  margin-top: 10px;
   margin-bottom: 0;
   font-size: @small-size;
   color: @red;
   text-transform: uppercase;
 }
 
+.demonstration__likes-text {
+  padding-left: 31px;
+}
+
 .demonstration__likes-button {
+  position: absolute;
+  top: 5px;
+  left: 0;
   width: 14px;
   height: 12px;
   padding: 0;
@@ -109,8 +117,10 @@
     justify-content: space-between;
     flex-wrap: wrap;
     width: 620px;
+    min-height: 100px;
     margin: 0 auto;
-    padding: 24px 28px;
+    padding: 21px 28px;
+    padding-bottom: 27px;
   }
 
   .demonstration__user-info {
@@ -119,6 +129,7 @@
 
   .demonstration__text--panorama {
     order: 3;
+    margin-top: -1px;
   }
 
   .demonstration__description--users {
@@ -128,6 +139,19 @@
 
   .demonstration__likes {
     margin-top: auto;
+  }
+
+  .demonstration__likes-button {
+    left: 106px;
+  }
+
+  .demonstration__likes-button--tablet {
+    left: 227px;
+  }
+
+  .demonstration__likes-text {
+    padding-left: 0;
+    padding-right: 31px;
   }
 
   .demonstration__likes--panorama {
@@ -149,6 +173,11 @@
   .demonstration__description--panorama {
     width: 940px;
     min-height: 10px;
-    padding-bottom: 24px;
+    padding-top: 24px;
+    padding-bottom: 26px;
+  }
+
+  .demonstration__likes-text {
+    padding-right: 34px;
   }
 }
