@@ -2,6 +2,9 @@
 
 var gulp = require("gulp");
 var less = require("gulp-less");
+var htmlmin = require('gulp-htmlmin');
+var uglify = require('gulp-uglify');
+var pump = require('pump')
 var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
@@ -28,6 +31,12 @@ gulp.task("style", function() {
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
+});
+
+gulp.task("scripts", function () {
+  return gulp.src("source/js/**/*.js")
+    .pipe(uglify())
+    .pipe(gulp.dest("build/js"));
 });
 
 gulp.task("sprite", function () {
@@ -60,6 +69,10 @@ gulp.task("html", function () {
     .pipe(posthtml([
       include()
     ]))
+    .pipe(gulp.dest("build"))
+    .pipe(htmlmin({
+      collapseWhitespace: true
+    }))
     .pipe(gulp.dest("build"));
 });
 
@@ -83,6 +96,7 @@ gulp.task("build", function (done) {
     "style",
     "sprite",
     "html",
+    "scripts",
     done
   );
 });
