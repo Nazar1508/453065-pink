@@ -2,6 +2,10 @@
   margin-top: 43px;
 }
 
+.history label {
+  cursor: pointer;
+}
+
 .history__promo {
   width: 280px;
   margin: 0 auto;
@@ -139,6 +143,16 @@
   box-sizing: border-box;
 }
 
+.history__form-pink:hover::before,
+.history__form-picker:hover::before {
+  border-color: #283645;
+}
+
+.history__form-pink:active::before,
+.history__form-picker:active::before {
+  border-color: @red;
+}
+
 .history__form-aplication:checked + .history__form-pink::after {
   content: "";
   position: absolute;
@@ -248,6 +262,10 @@
     color: #7dbd99;
     background-color: #1c9b5e;
   }
+}
+
+.history__form-submit:disabled {
+  background-color: #e5e5e5;
 }
 
 .history__form-required {
