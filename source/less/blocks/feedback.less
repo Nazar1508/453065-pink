@@ -14,7 +14,7 @@
 
 .feedback__list {
   .lists;
-  margin-top: 34px;
+  margin-top: 33px;
 }
 
 .feedback__item {
@@ -37,7 +37,7 @@
 }
 
 .feedback__item--addres {
-  margin-top: 24px;
+  margin-top: 26px;
 }
 
 .feedback__item-heading {
@@ -57,9 +57,21 @@
   color: @red;
 }
 
+.feedback__contacts--address {
+  display: block;
+  margin-top: -3px;
+  line-height: 29px;
+}
+
+.feedback__contacts--link {
+  display: block;
+  margin-top: 6px;
+  margin-left: 2px;
+}
+
 @media (min-width: @tablet-width) {
   .feedback {
-    padding-top: 51px;
+    padding-top: 48px;
     padding-bottom: 0;
   }
 
@@ -74,11 +86,15 @@
     line-height: 45px;
   }
 
+  .feedback__heading-bottom {
+    margin-top: 3px;
+  }
+
   .feedback__list {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    min-height: 222px;
+    min-height: 226px;
   }
 
   .feedback__item {
@@ -107,11 +123,15 @@
     width: 290px;
     line-height: 27px;
   }
+
+  .feedback__contacts--address {
+    line-height: 29px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .feedback {
-    padding-top: 66px;
+    padding-top: 64px;
   }
 
   .feedback__wrapper {
@@ -127,7 +147,7 @@
   .feedback__list {
     justify-content: space-between;
     min-height: 138px;
-    margin-top: 46px;
+    margin-top: 44px;
   }
 
   .feedback__item:last-child .feedback__item-heading {
@@ -155,6 +175,6 @@
   }
 
   .feedback__contacts {
-    line-height: 28px;
+    line-height: 30px;
   }
 }

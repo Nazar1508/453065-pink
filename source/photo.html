@@ -10,7 +10,7 @@
     <script src="js/picturefill.js"></script>
   </head>
   <body>
-    <div style="display: none;"></div>
+    <div style="display: none;">
       <include src="build/img/sprite.svg"></include>
     </div>
     <header class="page-header">
@@ -270,54 +270,50 @@
                 <fieldset class="add-photo__field">
                   <div class="add-photo__field-wrapper">
                     <div class="add-photo__field-item">
-                      <p class="add-photo__field-icon">
-                        <input class="add-photo__filter visually-hidden" type="checkbox" name="size" id="size" checked>
+                      <div class="add-photo__field-icon">
+                        <input class="add-photo__filter visually-hidden" type="radio" name="filter" id="size" checked>
                         <label class="add-photo__label" for="size">
                           <span class="visually-hidden">Размер фото</span>
                           <svg class="add-photo__label-crop" width="48" height="48">
                             <use xlink:href="#icon-editor-crop"></use>
                           </svg>
                         </label>
-                      </p>
-                      <div class="range range--hidden">
-                        <span class="range__line"></span>
-                        <span class="range__button range__button--1"></span>
+                        <div class="range range--active">
+                          <span class="range__line"></span>
+                          <span class="range__button range__button--1"></span>
+                        </div>
                       </div>
                     </div>
                     <div class="add-photo__field-item">
-                      <p class="add-photo__field-icon">
-                        <input class="add-photo__filter visually-hidden" type="checkbox" name="fill" id="fill">
+                      <div class="add-photo__field-icon">
+                        <input class="add-photo__filter visually-hidden" type="radio" name="filter" id="fill">
                         <label class="add-photo__label" for="fill">
                           <span class="visually-hidden">Заливка</span>
                           <svg class="add-photo__label-fill" width="48" height="48">
                             <use xlink:href="#icon-editor-fill"></use>
                           </svg>
                         </label>
-                      </p>
-                      <div class="range range--hidden">
-                        <span class="range__line"></span>
-                        <span class="range__button range__button--2"></span>
+                        <div class="range">
+                          <span class="range__line"></span>
+                          <span class="range__button range__button--2"></span>
+                        </div>
                       </div>
                     </div>
                     <div class="add-photo__field-item">
-                      <p class="add-photo__field-icon">
-                        <input class="add-photo__filter visually-hidden" type="checkbox" name="contrast" id="contrast">
+                      <div class="add-photo__field-icon">
+                        <input class="add-photo__filter visually-hidden" type="radio" name="filter" id="contrast">
                         <label class="add-photo__label" for="contrast">
                           <span class="visually-hidden">Контраст</span>
                           <svg class="add-photo__label-contrast" width="33" height="33">
                             <use xlink:href="#icon-editor-contrast"></use>
                           </svg>
                         </label>
-                      </p>
-                      <div class="range range--hidden">
-                        <span class="range__line"></span>
-                        <span class="range__button range__button--3"></span>
+                        <div class="range">
+                          <span class="range__line"></span>
+                          <span class="range__button range__button--3"></span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="range">
-                    <span class="range__line"></span>
-                    <span class="range__button"></span>
                   </div>
                 </fieldset>
                 <div class="add-photo__buttons">
@@ -341,7 +337,7 @@
           </svg>
         </a>
         <div class="page-footer__social social">
-          <ul class="social__list">
+          <ul class="social__list social__list--photo">
             <li class="social__item">
               <a class="social__link" href="https://twitter.com/htmlacademy_ru">
                 <span class="visually-hidden">Мы в Твиттер</span>

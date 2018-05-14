@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   .lists;
+  margin-top: 33px;
 }
 
 .social__item:not(:last-child) {
@@ -12,8 +13,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 46px;
-  height: 46px;
+  width: 45px;
+  height: 45px;
   border: 3px solid #e9ebec;
   border-radius: 50%;
 
@@ -33,6 +34,19 @@
 .social__link:active svg {
   opacity: 0.3;
 }
+
+@media (min-width: @tablet-width) {
+  .social__list {
+    margin-top: 0;
+  }
+
+  .social__list--photo,
+  .social__list--form {
+    margin-top: 2px;
+    margin-left: 1px;
+  }
+}
+
 
 @media (min-width: @desktop-width) {
   .social__list {

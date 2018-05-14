@@ -52,7 +52,7 @@
 }
 
 .history__form-item--emotions {
-  margin-top: 38px;
+  margin-top: 37px;
 }
 
 .history__field-wrapper {
@@ -81,16 +81,29 @@
 }
 
 .history__field-item--apps {
-  margin-top: 45px;
+  margin-top: 46px;
 }
 
 .history__field-item--apps:nth-child(1) {
   margin-top: 0;
 }
 
+.history__field-item--apps:nth-child(3) {
+  margin-top: 45px;
+}
+
+
 .history__field-unit {
   margin: 0;
   margin-bottom: 52px;
+}
+
+.history__field-unit:nth-child(3) {
+  margin-top: 53px;
+}
+
+.history__field-unit:nth-child(5) {
+  margin-top: 53px;
 }
 
 .history__field-unit:last-child {
@@ -120,11 +133,11 @@
 .history__form-checkbox:checked + .history__form-picker::after {
   content: "";
   position: absolute;
-  top: 3px;
-  left: 10px;
-  width: 18px;
+  top: 5px;
+  left: 9px;
+  width: 20px;
   height: 8px;
-  border: 2px solid @red;
+  border: 2px solid #d22856;
   border-top: none;
   border-right: none;
   transform: rotate(-45deg);
@@ -165,9 +178,14 @@
   box-sizing: border-box;
 }
 
+.history__form-aplication:focus + .history__form-pink::before,
+.history__form-checkbox:focus + .history__form-picker::before {
+  outline: 1px solid blue;
+}
+
 .history__form-label--red {
   display: block;
-  margin-left: 21px;
+  margin-left: 22px;
   margin-bottom: 6px;
   line-height: 30px;
   color: #d22856;
@@ -177,7 +195,7 @@
 .history__form-input,
 .history__form-textarea {
   width: 280px;
-  padding: 14.5px 21px;
+  padding: 14.5px 20px;
   box-sizing: border-box;
   font-size: @middle-size;
   line-height: 30px;
@@ -201,17 +219,17 @@
 .history__form-textarea {
   min-width: 250px;
   max-width: 280px;
-  min-height: 200px;
+  min-height: 202px;
   padding: 15px 18px;
 }
 
 .history__form-title {
-  margin: 0;
-  margin-bottom: 46px;
+  margin: 0 0 44px;
   padding: 0 40px;
+  padding-right: 41px;
   line-height: 18px;
   text-align: center;
-  color: @red;
+  color: #d22856;
   text-transform: uppercase;
 }
 
@@ -242,7 +260,7 @@
 
 .history__form-submit {
   width: 280px;
-  margin-top: 43px;
+  margin-top: 40px;
   padding: 17px 47px;
   font-weight: bold;
   font-family: @font;
@@ -271,15 +289,16 @@
 
 .history__form-required {
   display: block;
-  margin: 0;
-  margin-top: 34px;
-  margin-bottom: 21px;
+  margin: 35px 0 19px;
+  margin-left: 2px;
   line-height: 30px;
   text-transform: uppercase;
 }
 
 .history__form-star {
-  color: @red;
+  color: #d22856;
+  margin-left: -4px;
+  margin-right: 4px;
 }
 
 .history__form-required-text {
@@ -362,7 +381,7 @@
 
   .history__form-item--contacts {
     order: 3;
-    margin-top: 10px;
+    margin-top: 8px;
   }
 
   .history__form-item--progress {
@@ -372,7 +391,7 @@
 
   .history__form-item--emotions {
     order: 5;
-    margin-top: 9px;
+    margin-top: 7px;
   }
 
   .history__field-wrapper {
@@ -436,7 +455,7 @@
   .history__form-input--retreat {
     flex-grow: 1;
     padding: 14px 20px;
-    margin-left: 19px;
+    margin-left: 18px;
   }
 
   .history__form-input--contacts {
@@ -556,12 +575,12 @@
 
   .history__form-item--progress {
     width: 100%;
-    margin-top: 56px;
+    margin-top: 54px;
   }
 
   .history__form-item--emotions {
     width: 940px;
-    margin-top: 56px;
+    margin-top: 57px;
     box-sizing: border-box;
   }
 
@@ -592,6 +611,11 @@
   .history__field-item--contacts {
     margin-top: 0;
     width: 375px;
+  }
+
+  .history__field-unit:nth-child(3),
+  .history__field-unit:nth-child(5) {
+    margin-top: 0;
   }
 
   .history__form-field--progress {
@@ -656,6 +680,10 @@
 
   .history__form-button {
     margin-bottom: 0;
+  }
+
+  .history__form-submit {
+    margin-top: 65px;
   }
 
   .history__form-required-text {
